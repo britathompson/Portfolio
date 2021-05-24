@@ -1,3 +1,177 @@
+.hi {
+  color: white;
+}
+
 body {
-  background: red;
+  background: rgb(43, 43, 43);
+  font-family: "Krub", sans-serif;
+  padding-bottom: 150px;
+}
+
+header {
+  color: white;
+  padding-top: 150px;
+}
+
+h3, aside {
+  color: white;
+}
+
+
+.fa-code {
+  color: rgb(252, 159, 175);
+}
+
+h1 {
+  font-size: 72px;
+  margin: 15px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  max-width: 70%;
+}
+
+.navbar {
+  padding: 20px 0px 0px 0px;
+  margin: 15px;
+  background: rgb(43, 43, 43);
+  font-family: 'KoHo', sans-serif;
+  
+}
+
+.nav-item {
+  margin: 0 20px;
+}
+
+.name {
+  color: rgb(252, 159, 175)
+}
+
+.links {
+  color: white;
+}
+
+.btn-primary {
+  background-color: rgb(94, 120, 50);
+  border: none;
+}
+/* font-family: 'KoHo', sans-serif;
+font-family: 'Krub', sans-serif;
+font-family: 'Niramit', sans-serif; */
+
+#top,
+#bottom,
+#left,
+#right {
+  background: #ffffff;
+  position: fixed;
+}
+#left,
+#right {
+  top: 0;
+  bottom: 0;
+  width: 15px;
+}
+#left {
+  left: 0;
+}
+#right {
+  right: 0;
+}
+
+#top,
+#bottom {
+  left: 0;
+  right: 0;
+  height: 15px;
+}
+#top {
+  top: 0;
+}
+#bottom {
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 125px 50px;
+  }
+
+  #top,
+  #bottom,
+  #left,
+  #right {
+    background: #ffffff;
+    position: fixed;
+  }
+  #left,
+  #right {
+    top: 0;
+    bottom: 0;
+    width: 10px;
+  }
+  #left {
+    left: 0;
+  }
+  #right {
+    right: 0;
+  }
+
+  #top,
+  #bottom {
+    left: 0;
+    right: 0;
+    height: 10px;
+  }
+  #top {
+    top: 0;
+  }
+  #bottom {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    padding: 100px 20px;
+  }
+
+  #top,
+  #bottom,
+  #left,
+  #right {
+    background: #ffffff;
+    position: fixed;
+  }
+  #left,
+  #right {
+    top: 0;
+    bottom: 0;
+    width: 5px;
+  }
+  #left {
+    left: 0;
+  }
+  #right {
+    right: 0;
+  }
+
+  #top,
+  #bottom {
+    left: 0;
+    right: 0;
+    height: 5px;
+  }
+  #top {
+    top: 0;
+  }
+  #bottom {
+    bottom: 0;
+  }
 }
