@@ -1,10 +1,18 @@
-.hi {
+.fa-angle-down {
   color: white;
+  text-align: center;
+  width: 100%;
+  color: var(--primary-color);
+}
+
+:root {
+  --primary-color: rgb(252, 159, 175);
+  --secondary-color: rgb(94, 120, 50);
 }
 
 body {
   background: rgb(43, 43, 43);
-  font-family: "Krub", sans-serif;
+  font-family: 'Krub', sans-serif;
   padding-bottom: 150px;
 }
 
@@ -19,13 +27,14 @@ h3, aside {
 
 
 .fa-code {
-  color: rgb(252, 159, 175);
+  color: var(--primary-color);
 }
 
 h1 {
-  font-size: 72px;
-  margin: 15px;
+  font-size: 86px;
+  margin: 130px 15px 15px 15px;
   text-align: center;
+  font-family: 'Bungee Shade', cursive;
 }
 
 img {
@@ -41,7 +50,7 @@ img {
   padding: 20px 0px 0px 0px;
   margin: 15px;
   background: rgb(43, 43, 43);
-  font-family: 'KoHo', sans-serif;
+  /* font-family: 'KoHo', sans-serif; */
   
 }
 
@@ -50,7 +59,7 @@ img {
 }
 
 .name {
-  color: rgb(252, 159, 175)
+  color: var(--primary-color);
 }
 
 .links {
@@ -58,12 +67,14 @@ img {
 }
 
 .btn-primary {
-  background-color: rgb(94, 120, 50);
+  background-color: var(--secondary-color);
   border: none;
 }
 /* font-family: 'KoHo', sans-serif;
 font-family: 'Krub', sans-serif;
 font-family: 'Niramit', sans-serif; */
+/* font-family: 'Bungee Shade', cursive; */
+/* font-family: 'Bungee Hairline', cursive; */
 
 #top,
 #bottom,
