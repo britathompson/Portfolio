@@ -1,81 +1,79 @@
+/* Created variables */
+:root {
+  --primary-color: rgb(252, 159, 175);
+  --secondary-color: rgb(94, 120, 50);
+  --background-color: rgb(43, 43, 43);
+}
+
+body {
+  background: var(--background-color);
+  font-family: 'Krub', sans-serif;
+  padding-bottom: 90px;
+}
+
+/* Navigation Bar */
+.fa-code {
+  color: var(--primary-color);
+}
+.navbar {
+  padding: 20px 0px 0px 0px;
+  margin: 15px;
+  background: var(--background-color); 
+}
+.nav-item {
+  margin: 0 20px;
+}
+
+/* Header and arrow icons */
+h1 {
+  color: white;
+  font-size: 86px;
+  margin: 150px 0px 40px 0px;
+  padding-top: 150px;
+  text-align: center;
+  font-family: 'Bungee Shade', cursive;
+}
 .fa-angle-down {
   color: white;
   text-align: center;
   width: 100%;
   color: var(--primary-color);
+  margin: 8px auto;
 }
 
-:root {
-  --primary-color: rgb(252, 159, 175);
-  --secondary-color: rgb(94, 120, 50);
+/* My name is and links */
+.link-page {
+  margin: 200px 100px;
+  background: rgb(61, 54, 54);
+  padding: 0px 0px 80px 0px;
+  border-radius: 6px;
 }
-
-body {
-  background: rgb(43, 43, 43);
-  font-family: 'Krub', sans-serif;
-  padding-bottom: 150px;
-}
-
-header {
+h3 {
   color: white;
-  padding-top: 150px;
+  font-family: 'Bungee Hairline', cursive;
+  padding: 50px 0px 0px 50px;
+  font-size: 60px;
 }
-
-h3, aside {
-  color: white;
-}
-
-
-.fa-code {
-  color: var(--primary-color);
-}
-
-h1 {
-  font-size: 86px;
-  margin: 130px 15px 15px 15px;
-  text-align: center;
-  font-family: 'Bungee Shade', cursive;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.main {
-  max-width: 70%;
-}
-
-.navbar {
-  padding: 20px 0px 0px 0px;
-  margin: 15px;
-  background: rgb(43, 43, 43);
-  /* font-family: 'KoHo', sans-serif; */
-  
-}
-
-.nav-item {
-  margin: 0 20px;
-}
-
 .name {
   color: var(--primary-color);
+  text-align: center;
+  font-size: 80px;
 }
 
-.links {
-  color: white;
-}
 
-.btn-primary {
-  background-color: var(--secondary-color);
-  border: none;
-}
 /* font-family: 'KoHo', sans-serif;
 font-family: 'Krub', sans-serif;
 font-family: 'Niramit', sans-serif; */
 /* font-family: 'Bungee Shade', cursive; */
 /* font-family: 'Bungee Hairline', cursive; */
 
+/* img {
+  max-width: 100%;
+  height: auto;
+} */
+
+
+/* Border */
 #top,
 #bottom,
 #left,
@@ -109,11 +107,19 @@ font-family: 'Niramit', sans-serif; */
   bottom: 0;
 }
 
+/* Media query for medium screen */
 @media (max-width: 768px) {
-  header {
-    padding: 125px 50px;
+  h1 {
+    font-size: 80px;
   }
-
+  h3 {
+    font-size: 52px;
+    text-align: center;
+    padding: 40px 0px;
+  }
+  .name {
+    font-size: 76px;
+  }
   #top,
   #bottom,
   #left,
@@ -148,9 +154,23 @@ font-family: 'Niramit', sans-serif; */
   }
 }
 
+
+/* Media query for small screen */
 @media (max-width: 576px) {
-  header {
-    padding: 100px 20px;
+ h1 {
+    font-size: 45px;
+    margin-top: 30px;
+  }
+  .link-page {
+    margin: 100px 30px;
+    padding-bottom: 50px;
+  }
+  h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .name {
+    font-size: 45px;
   }
 
   #top,
