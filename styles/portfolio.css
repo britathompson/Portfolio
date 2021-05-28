@@ -3,12 +3,14 @@
   --primary-color: rgb(252, 159, 175);
   --secondary-color: #dfaf57;;
   --background-color: rgb(43, 43, 43);
+  --secondary-background: rgb(61, 54, 54);
 }
 
 body {
   background: var(--background-color);
   font-family: 'Krub', sans-serif;
   padding-bottom: 200px;
+  color: white;
 }
 
 /* Navigation Bar */
@@ -20,13 +22,15 @@ body {
   margin: 15px;
   background: var(--background-color); 
 }
+.navbar-nav {
+  margin-left:auto;
+}
 .nav-item {
   margin: 0 20px;
 }
 
 /* Header and arrow icons */
-h1 {
-  color: white;
+.homepage-header {
   font-size: 86px;
   margin: 150px 0px 40px 0px;
   padding-top: 150px;
@@ -38,7 +42,6 @@ h1 {
   transition: 1s color ease-out;
 } */
 .fa-angle-down {
-  color: white;
   text-align: center;
   width: 100%;
   color: var(--primary-color);
@@ -48,14 +51,15 @@ h1 {
 /* My name is and links */
 .link-page {
   margin: 200px 100px 80px 100px;
-  background: rgb(61, 54, 54);
+  background: var(--secondary-background);
   padding: 0px 0px 80px 0px;
   border-radius: 6px;
 }
-h3 {
-  color: white;
-  font-family: 'Bungee Hairline', cursive;
+.name-h3 {
   padding: 50px 0px 0px 50px;
+}
+h2 {
+  font-family: 'Bungee Hairline', cursive;
   font-size: 60px;
 }
 .name {
@@ -67,7 +71,6 @@ h3 {
   text-align: center;
 }
 .link-button {
-  margin-bottom: 50px;
   font-family: 'Bungee Shade', cursive;
   font-size: 24px;
   background: var(--background-color);
@@ -82,18 +85,31 @@ h3 {
   color: var(--background-color);
   transition: 1s background-color;
 }
+.col-sm-4 {
+  padding: 8px;
+}
 
-/* font-family: 'KoHo', sans-serif;
-font-family: 'Krub', sans-serif;
-font-family: 'Niramit', sans-serif; */
-/* font-family: 'Bungee Shade', cursive; */
-/* font-family: 'Bungee Hairline', cursive; */
-
-/* img {
+/* About and Project pages */
+img {
   max-width: 100%;
   height: auto;
-} */
-
+  border-radius: 4px;
+}
+h3 {
+  font-family: 'Bungee Hairline', cursive;
+}
+.page-header {
+  margin: 180px 0 80px; 
+  text-align: center;
+}
+.content {
+  background: var(--secondary-background);
+  border-radius: 4px;
+  line-height: 2;
+  padding: 50px;
+  text-align: center;
+  margin: 0 0 48px;
+}
 
 /* Border */
 #top,
@@ -131,10 +147,14 @@ font-family: 'Niramit', sans-serif; */
 
 /* Media query for medium screen */
 @media (max-width: 768px) {
-  h1 {
+  .page-header {
+    margin: 100px 0 30px;
+    padding: 0px;
+  } 
+  .homepage-header {
     font-size: 80px;
   }
-  h3 {
+  .name-h3 {
     font-size: 52px;
     text-align: center;
     padding: 40px 0px;
@@ -142,44 +162,19 @@ font-family: 'Niramit', sans-serif; */
   .name {
     font-size: 76px;
   }
-  #top,
-  #bottom,
+
   #left,
   #right {
-    background: #ffffff;
-    position: fixed;
-  }
-  #left,
-  #right {
-    top: 0;
-    bottom: 0;
     width: 10px;
   }
-  #left {
-    left: 0;
-  }
-  #right {
-    right: 0;
-  }
-
   #top,
   #bottom {
-    left: 0;
-    right: 0;
     height: 10px;
   }
-  #top {
-    top: 0;
-  }
-  #bottom {
-    bottom: 0;
-  }
-}
-
 
 /* Media query for small screen */
 @media (max-width: 576px) {
- h1 {
+ .homepage-header {
     font-size: 45px;
     margin-top: 30px;
   }
@@ -187,7 +182,7 @@ font-family: 'Niramit', sans-serif; */
     margin: 100px 30px;
     padding-bottom: 50px;
   }
-  h3 {
+  .name-h3 {
     font-size: 30px;
     text-align: center;
   }
@@ -195,36 +190,13 @@ font-family: 'Niramit', sans-serif; */
     font-size: 50px;
   }
 
-  #top,
-  #bottom,
   #left,
   #right {
-    background: #ffffff;
-    position: fixed;
-  }
-  #left,
-  #right {
-    top: 0;
-    bottom: 0;
     width: 5px;
-  }
-  #left {
-    left: 0;
-  }
-  #right {
-    right: 0;
-  }
-
+  } 
   #top,
   #bottom {
-    left: 0;
-    right: 0;
     height: 5px;
   }
-  #top {
-    top: 0;
-  }
-  #bottom {
-    bottom: 0;
-  }
+}
 }
