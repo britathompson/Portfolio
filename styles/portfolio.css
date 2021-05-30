@@ -55,12 +55,13 @@ body {
   padding: 0px 0px 80px 0px;
   border-radius: 6px;
 }
-.name-h3 {
+.name-h2 {
   padding: 50px 0px 0px 50px;
+  font-size: 50px !important;
 }
 h2 {
   font-family: 'Bungee Hairline', cursive;
-  font-size: 60px;
+  font-size: 80px;
 }
 .name {
   color: var(--primary-color);
