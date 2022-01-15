@@ -1,14 +1,14 @@
 /* Created variables */
 :root {
   --primary-color: rgb(252, 159, 175);
-  --secondary-color: #dfaf57;;
+  --secondary-color: #dfaf57;
   --background-color: rgb(43, 43, 43);
   --secondary-background: rgb(61, 54, 54);
 }
 
 body {
   background: var(--background-color);
-  font-family: 'Krub', sans-serif;
+  font-family: "Krub", sans-serif;
   padding-bottom: 200px;
   color: white;
 }
@@ -20,10 +20,10 @@ body {
 .navbar {
   padding: 20px 0px 0px 0px;
   margin: 15px;
-  background: var(--background-color); 
+  background: var(--background-color);
 }
 .navbar-nav {
-  margin-left:auto;
+  margin-left: auto;
 }
 .nav-item {
   margin: 0 20px;
@@ -35,7 +35,7 @@ body {
   margin: 150px 0px 40px 0px;
   padding-top: 150px;
   text-align: center;
-  font-family: 'Bungee Shade', cursive;
+  font-family: "Bungee Shade", cursive;
 }
 /* h1:hover {
   color: var(--secondary-color);
@@ -60,7 +60,7 @@ body {
   font-size: 50px !important;
 }
 h2 {
-  font-family: 'Bungee Hairline', cursive;
+  font-family: "Bungee Hairline", cursive;
   font-size: 80px;
 }
 .name {
@@ -72,7 +72,7 @@ h2 {
   text-align: center;
 }
 .link-button {
-  font-family: 'Bungee Shade', cursive;
+  font-family: "Bungee Shade", cursive;
   font-size: 24px;
   background: var(--background-color);
   color: white;
@@ -82,12 +82,12 @@ h2 {
   transition: 1s background-color;
 }
 .link-button:hover {
-  background-color:  var(--secondary-color);
+  background-color: rgb(214, 158, 158);
   color: var(--background-color);
   transition: 1s background-color;
 }
 .col-sm-4 {
-  padding: 8px;
+  padding: 11px;
 }
 
 /* About and Project pages */
@@ -97,10 +97,10 @@ img {
   border-radius: 4px;
 }
 h3 {
-  font-family: 'Bungee Hairline', cursive;
+  font-family: "Bungee Hairline", cursive;
 }
 .page-header {
-  margin: 180px 0 80px; 
+  margin: 180px 0 80px;
   text-align: center;
 }
 .content {
@@ -110,6 +110,20 @@ h3 {
   padding: 50px;
   text-align: center;
   margin: 0 0 48px;
+}
+
+.project-links {
+  color: white;
+  text-decoration: none;
+}
+
+.project-links:hover {
+  color: var(--primary-color);
+}
+
+/* Contact Footer */
+#contact {
+  margin-top: 70px;
 }
 
 /* Border */
@@ -151,7 +165,7 @@ h3 {
   .page-header {
     margin: 100px 0 30px;
     padding: 0px;
-  } 
+  }
   .homepage-header {
     font-size: 80px;
   }
@@ -173,31 +187,31 @@ h3 {
     height: 10px;
   }
 
-/* Media query for small screen */
-@media (max-width: 576px) {
- .homepage-header {
-    font-size: 45px;
-    margin-top: 30px;
-  }
-  .link-page {
-    margin: 100px 30px;
-    padding-bottom: 50px;
-  }
-  .name-h3 {
-    font-size: 30px;
-    text-align: center;
-  }
-  .name {
-    font-size: 50px;
-  }
+  /* Media query for small screen */
+  @media (max-width: 576px) {
+    .homepage-header {
+      font-size: 45px;
+      margin-top: 30px;
+    }
+    .link-page {
+      margin: 100px 30px;
+      padding-bottom: 50px;
+    }
+    .name-h3 {
+      font-size: 30px;
+      text-align: center;
+    }
+    .name {
+      font-size: 50px;
+    }
 
-  #left,
-  #right {
-    width: 5px;
-  } 
-  #top,
-  #bottom {
-    height: 5px;
+    #left,
+    #right {
+      width: 5px;
+    }
+    #top,
+    #bottom {
+      height: 5px;
+    }
   }
-}
 }
