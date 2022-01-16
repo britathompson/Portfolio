@@ -122,8 +122,23 @@ h3 {
 }
 
 /* Contact Footer */
-#contact {
-  margin-top: 70px;
+#contact{
+  margin-top: 80px;
+}
+
+.contact-info{
+  margin-top: 30px;
+}
+
+.social-links a{
+  font-size: 20px;
+  padding-left: 0;
+  margin: 0 20px;
+  color: white;
+}
+
+.social-links a:hover{
+  color: var(--primary-color);
 }
 
 /* Border */
