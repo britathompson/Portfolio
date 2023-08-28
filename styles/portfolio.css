@@ -79,12 +79,12 @@ h2 {
   padding: 15px;
   text-decoration: none;
   border-radius: 6px;
-  transition: 1s background-color;
+  transition: 0.5s background-color;
 }
 .link-button:hover {
   background-color: rgb(214, 158, 158);
   color: var(--background-color);
-  transition: 1s background-color;
+  transition: 0.5s background-color;
 }
 .col-sm-4 {
   padding: 11px;
@@ -96,6 +96,26 @@ img {
   height: auto;
   border-radius: 4px;
 }
+#react-weather {
+  width: 300%;
+}
+#about {
+  font-size: 15px;
+}
+
+
+
+  .containers {
+  display: grid;
+  grid-template-columns:20% 20% 20% 20%;
+  align-items: center;
+padding-left: 250px;
+
+}
+.images{
+  align-items: flex;
+}
+
 h3 {
   font-family: "Bungee Hairline", cursive;
 }
@@ -122,22 +142,22 @@ h3 {
 }
 
 /* Contact Footer */
-#contact{
+#contact {
   margin-top: 80px;
 }
 
-.contact-info{
+.contact-info {
   margin-top: 30px;
 }
 
-.social-links a{
+.social-links a {
   font-size: 20px;
   padding-left: 0;
   margin: 0 20px;
   color: white;
 }
 
-.social-links a:hover{
+.social-links a:hover {
   color: var(--primary-color);
 }
 
