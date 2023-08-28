@@ -103,16 +103,13 @@ img {
   font-size: 15px;
 }
 
-
-
-  .containers {
+.containers {
   display: grid;
-  grid-template-columns:20% 20% 20% 20%;
+  grid-template-columns: 20% 20% 20% 20%;
   align-items: center;
-padding-left: 250px;
-
+  padding-left: 250px;
 }
-.images{
+.images {
   align-items: flex;
 }
 
